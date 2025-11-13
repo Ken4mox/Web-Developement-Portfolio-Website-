@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Kennedy Asiago</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">Kennedy <span>Asiago</span></a>
+
+      <button id="menu-btn" class="menu-btn" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="section-kicker">Contact</p>
+          <h1>Let’s talk about your next project.</h1>
+          <p class="page-intro">
+            If you’re working on digital programs in health, employment, or
+            governance – or you simply want to compare notes on delivery and
+            partnerships – I’m open to a conversation.
+          </p>
+
+          <ul class="list">
+            <li><strong>Email:</strong> <a href="mailto:ken4asiago@gmail.com">ken4asiago@gmail.com</a></li>
+            <li><strong>Location:</strong> Nairobi, Kenya</li>
+          </ul>
+        </div>
+
+        <div class="contact-card reveal">
+          <h2>Send a message</h2>
+          <form id="contact-form" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Share a bit about your project, context, or question."
+            ></textarea>
+
+            <button type="submit" class="btn primary-btn">Send message</button>
+            <p id="form-message" class="form-message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 Kennedy Mokaya Asiago. All rights reserved.</p>
+      <p><a href="mailto:ken4asiago@gmail.com">ken4asiago@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
