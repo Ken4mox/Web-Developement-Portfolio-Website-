@@ -704,4 +704,25 @@ textarea:focus {
   .nav-links.open {
     display: flex;
   }
+   .footer-left p {
+  margin: 0;
+  line-height: 1.4;
 }
+
+.footer-right {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-right a {
+  color: var(--text-soft);
+  text-decoration: none;
+  font-size: 0.86rem;
+}
+
+.footer-right a:hover {
+  color: var(--accent-soft);
+}
+
+}
+
