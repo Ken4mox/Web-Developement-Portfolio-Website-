@@ -499,7 +499,9 @@ nav {
   gap: 2.2rem;
 }
 
-/* Projects */
+/* =========================
+   Projects
+   ========================= */
 
 .page-intro {
   max-width: 38rem;
@@ -552,6 +554,16 @@ nav {
   font-size: 0.8rem;
   color: var(--text-soft);
   margin-top: 0.25rem;
+}
+
+/* Project grid layout tweaks */
+
+.project-grid {
+  align-items: stretch;
+}
+
+.project-card {
+  height: 100%;
 }
 
 /* Forms */
@@ -624,6 +636,20 @@ textarea:focus {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* =========================
+   Large-screen tweaks for projects
+   ========================= */
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .project-grid .project-card:last-child {
+    grid-column: span 2;
+  }
 }
 
 /* =========================
